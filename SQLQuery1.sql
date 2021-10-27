@@ -79,13 +79,6 @@ select Distinct ProductSubcategoryID, Color
 from Production.Product
 where ProductSubcategoryID is not null and Color is not null
 
---16
-select ProductSubcategoryID, left([name],35) as [name], Color, ListPrice
-from Production.Product
-where color not in ('Red', 'Black')
-    or ListPrice between 1000 and 2000
-	or ProductSubcategoryID = 1
-	order by ProductSubcategoryID, ListPrice
 
 
 	
